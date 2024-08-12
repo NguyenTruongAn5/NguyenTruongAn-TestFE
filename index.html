@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Nguyễn Trường An - Test FE</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Responsive mobile and tablet -->
+        <button id="btn-menu-mobi">
+            &#9776;
+        </button>
+        <nav id="menu-mobi" class="header__navbarMobi container">
+                         
+            <div class="header-navbar__menuMobi active">
+                <button id="btn-close-menu" class="header-navbar__menu-toggle">
+                    &#9776;Funiro.
+                </button>
+                <ul>
+                    <li class="mr-3">
+                        <a href="#">
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="#">
+                            <span>Rooms</span>
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="#">
+                            Inspirations
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+
+        <nav class="header__navbar active container d-flex justify-content-between align-items-center">
+            <a class="header-navbar__logo" href="#">
+                Funiro.
+            </a>
+            <div class="header-navbar__menu">
+                <ul class="d-flex list-unstyled mb-0">
+                    <li class="mr-3">
+                        <a href="#">
+                            <span>Products</span>
+                            <img src="/assets/Images/Arrow-down.svg" alt="Arrow-down">
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="#">
+                            <span>Rooms</span>
+                            <img src="/assets/Images/Arrow-down.svg" alt="Arrow-down">
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="#">
+                            Inspirations
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form action="" class="header-navbar__search d-flex align-items-center">
+                <button type="submit">
+                    <img src="/assets/Images/Search.svg" alt="Search" class="mr-2">
+                </button>
+                <input type="text" placeholder="Search for minimalist chair">
+            </form>
+            <div class="header-navbar__user d-flex">
+                <a href="#" class="mr-3">
+                    <img src="/assets/Images/Heart.svg" alt="Heart">
+                </a>
+                <a href="#" class="mr-3">
+                    <img src="/assets/Images/Cart.svg" alt="Cart">
+                </a>
+                <a href="#">
+                    <img src="/assets/Images/Ellipse 2.png" alt="user-img">
+                </a>
+            </div>
+        </nav>
+        <div class="header__block"></div>
+
+        <div class="header__banner">
+            <div class="header-banner__img">
+                <img src="/assets/Images/1528 1.svg" alt="banner">
+            </div>
+
+            <div class="header-banner__img">
+                <img src="/assets/Images/Rectangle 48.svg" alt="banner">
+            </div>
+
+            <div id="bannerIntro" class="header-banner__intro">
+                <span class="header-banner__title">
+                    High-Quality Furniture Just
+                    For You
+                </span>
+                <span class="header-banner__content">
+                    Our furniture is made from selected and best
+                    quality materials that are suitable for your dream home
+                </span>
+                <button>Shop Now</button>
+            </div>
+
+            <div id="introPrice" class="header-banner__introPrice">
+                <span class="header-introPrice__title">
+                    Bohauss
+                </span>
+                <span class="header-introPrice__content">
+                    Luxury big sofa 2-seat
+                </span>
+                <span class="header-introPrice__price">
+                    Rp 17.000.000
+                    <a href="#"><img src="/assets/Images/arrow right.svg" alt="arrow"></a>
+                </span>
+            </div>
+
+            <div class="header-banner__owlnav">
+                <a class="header-banner__prev" href="#">
+                    <img src="/assets/Images/Right 24px.svg" alt="arrow">
+                </a>
+                <a class="header-banner__next" href="#">
+                    <img src="/assets/Images/Right 24px.svg" alt="arrow">
+                </a>
+            </div>
+            <div class="header-banner__dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!-- Beging Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 container__brand">
+                <ul class="list-unstyled d-flex">
+                    <li class="d-flex align-items-center flex-fill">
+                        <div class="container-brand__icon">
+                            <img src="/assets/Images/trophy 1.svg" alt="trophy">
+                        </div>
+                        <div class="container-brand__content">
+                            <p>High Quality</p>
+                            <span>crafted from top materials</span>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center flex-fill">
+                        <div class="container-brand__icon">
+                            <img src="/assets/Images/guarantee.svg" alt="guarantee">
+                        </div>
+                        <div class="container-brand__content">
+                            <p>Warrany Protection</p>
+                            <span>Over 2 years</span>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center flex-fill">
+                        <div class="container-brand__icon">
+                            <img src="/assets/Images/shipping.svg" alt="shipping">
+                        </div>
+                        <div class="container-brand__content">
+                            <p>Free Shipping</p>
+                            <span>Order over 150 $</span>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center flex-fill">
+                        <div class="container-brand__icon">
+                            <img src="/assets/Images/customer-support.svg" alt="support">
+                        </div>
+                        <div class="container-brand__content">
+                            <p>24 / 7 Support</p>
+                            <span>Dedicated support</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Product -->
+        <div class="row">
+            <div class="container__product">
+                <div class="container-product__title">
+                    <h2>Our Products</h2>
+                </div>
+                <div class="container-product__items">
+                    <!-- Product Item -->
+                    <div class="container-product__item">
+                        <div class="product-image">
+                            <img src="/assets/Images/image 1.svg" alt="Product Image">
+                            <div class="discount-badge sale">
+                                <span class="badge-text">-30%</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Syltherine</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-prices">
+                                <span class="price-discount">Rp 2.500.000</span>
+                                <span class="price-original">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <button class="add-btn">Add to cart</button>
+                            <div class="social-buttons">
+                                <button class="share-btn">
+                                    <img src="/assets/Images/gridicons_share.svg" alt="">
+                                    Share
+                                </button>
+                                <button class="like-btn">
+                                    <img src="/assets/Images/Heart (1).svg" alt="">
+                                    Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-product__item">
+                        <div class="product-image">
+                            <img src="/assets/Images/image 2.svg" alt="Product Image">
+                            <!-- <div class="discount-badge sale">
+                                <span class="badge-text">-30%</span>
+                            </div> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Leviosa</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-prices">
+                                <span class="price-discount">Rp 2.500.000</span>
+                                <!-- <span class="price-original">Rp 3.500.000</span> -->
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <button class="add-btn">Add to cart</button>
+                            <div class="social-buttons">
+                                <button class="share-btn">
+                                    <img src="/assets/Images/gridicons_share.svg" alt="">
+                                    Share
+                                </button>
+                                <button class="like-btn">
+                                    <img src="/assets/Images/Heart (1).svg" alt="">
+                                    Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-product__item">
+                        <div class="product-image">
+                            <img src="/assets/Images/image 3.svg" alt="Product Image">
+                            <div class="discount-badge sale">
+                                <span class="badge-text">-50%</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Lolito</h3>
+                            <p class="product-description">Luxury big sofa</p>
+                            <div class="product-prices">
+                                <span class="price-discount">Rp 7.000.000</span>
+                                <span class="price-original">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <button class="add-btn">Add to cart</button>
+                            <div class="social-buttons">
+                                <button class="share-btn">
+                                    <img src="/assets/Images/gridicons_share.svg" alt="">
+                                    Share
+                                </button>
+                                <button class="like-btn">
+                                    <img src="/assets/Images/Heart (1).svg" alt="">
+                                    Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-product__item">
+                        <div class="product-image">
+                            <img src="/assets/Images/image 4.svg" alt="Product Image">
+                            <div class="discount-badge new">
+                                <span class="badge-text">New</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Respira</h3>
+                            <p class="product-description">Minimalist fan</p>
+                            <div class="product-prices">
+                                <span class="price-discount">Rp 500.000</span>
+                                <!-- <span class="price-original">Rp 14.000.000</span> -->
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <button class="add-btn">Add to cart</button>
+                            <div class="social-buttons">
+                                <button class="share-btn">
+                                    <img src="/assets/Images/gridicons_share.svg" alt="">
+                                    Share
+                                </button>
+                                <button class="like-btn">
+                                    <img src="/assets/Images/Heart (1).svg" alt="">
+                                    Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-product__item">
+                        <div class="product-image">
+                            <img src="/assets/Images/image 9.svg" alt="Product Image">
+                            <!-- <div class="discount-badge new">
+                                <span class="badge-text">New</span>
+                            </div> -->
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Grifo</h3>
+                            <p class="product-description">Night lamp</p>
+                            <div class="product-prices">
+                                <span class="price-discount">Rp 1.500.000</span>
+                                <!-- <span class="price-original">Rp 14.000.000</span> -->
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <button class="add-btn">Add to cart</button>
+                            <div class="social-buttons">
+                                <button class="share-btn">
+                                    <img src="/assets/Images/gridicons_share.svg" alt="">
+                                    Share
+                                </button>
+                                <button class="like-btn">
+                                    <img src="/assets/Images/Heart (1).svg" alt="">
+                                    Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-product__item">
+                        <div class="product-image">
+                            <img src="/assets/Images/image 6.svg" alt="Product Image">
+                            <div class="discount-badge new">
+                                <span class="badge-text">New</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Muggo</h3>
+                            <p class="product-description">Small mug</p>
+                            <div class="product-prices">
+                                <span class="price-discount">Rp 150.000</span>
+                                <!-- <span class="price-original">Rp 14.000.000</span> -->
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <button class="add-btn">Add to cart</button>
+                            <div class="social-buttons">
+                                <button class="share-btn">
+                                    <img src="/assets/Images/gridicons_share.svg" alt="">
+                                    Share
+                                </button>
+                                <button class="like-btn">
+                                    <img src="/assets/Images/Heart (1).svg" alt="">
+                                    Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-product__item">
+                        <div class="product-image">
+                            <img src="/assets/Images/image 7.svg" alt="Product Image">
+                            <div class="discount-badge sale">
+                                <span class="badge-text">-50%</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Pingky</h3>
+                            <p class="product-description">Cute bed set</p>
+                            <div class="product-prices">
+                                <span class="price-discount">Rp 7.000.000</span>
+                                <span class="price-original">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <button class="add-btn">Add to cart</button>
+                            <div class="social-buttons">
+                                <button class="share-btn">
+                                    <img src="/assets/Images/gridicons_share.svg" alt="">
+                                    Share
+                                </button>
+                                <button class="like-btn">
+                                    <img src="/assets/Images/Heart (1).svg" alt="">
+                                    Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-product__item">
+                        <div class="product-image">
+                            <img src="/assets/Images/image 8.svg" alt="Product Image">
+                            <div class="discount-badge new">
+                                <span class="badge-text">New</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Potty</h3>
+                            <p class="product-description">Minimalist flower pot</p>
+                            <div class="product-prices">
+                                <span class="price-discount">Rp 500.000</span>
+                                <!-- <span class="price-original">Rp 14.000.000</span> -->
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <button class="add-btn">Add to cart</button>
+                            <div class="social-buttons">
+                                <button class="share-btn">
+                                    <img src="/assets/Images/gridicons_share.svg" alt="">
+                                    Share
+                                </button>
+                                <button class="like-btn">
+                                    <img src="/assets/Images/Heart (1).svg" alt="">
+                                    Live
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container-product__showmore">
+                    <button class="conteainer-product__showmore">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inspirations -->
+        <div class="row">
+            <div class="container__inspirations">
+                <div class="container-inspirations__info">
+                    <div class="container-inspirations__title">
+                        50+ Beautiful rooms inspiration
+                    </div>
+                    <div class="container-inspirations__content">
+                        Our designer already made a lot of beautiful
+                        prototipe of rooms that inspire you
+                    </div>
+                    <div class="container-inspirations__btn">
+                        <button>Explore More</button>
+                    </div>
+                </div>
+
+                <div class="container-inspiration__img">
+                    <img src="/assets/Images/Rectangle 24.svg" alt="bg">
+                    <div class="container-inspiration__intro">
+                        01 <span>Bed Room</span>
+                        <p>Inner Peace</p>
+                    </div>
+                    <button><img src="/assets/Images/arrow right.svg" alt="arrow"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beging Tips -->
+        <div class="row">
+            <div class="container__tips">
+                <div class="container-tips__title">
+                    <h2>Tips & Tricks</h2>
+                </div>
+                <div class="container-tips__item">
+                    <img src="/assets/Images/Rectangle 32.svg" alt="Rectangle">
+                    <p>How to create a living room to love</p>
+                    <span>20 jan 2020</span>
+                </div>
+
+                <div class="container-tips__item active">
+                    <img src="/assets/Images/Rectangle 32 (1).svg" alt="Rectangle">
+                    <p>Solution for clean look working space</p>
+                    <span>10 jan 2020</span>
+                </div>
+
+                <div class="container-tips__item">
+                    <img src="/assets/Images/Rectangle 32 (2).svg" alt="Rectangle">
+                    <p>Make your cooking activity more fun with good setup</p>
+                    <span>20 jan 2020</span>
+                </div>
+
+                <div class="container-tips__owlnav">
+                    <a class="container-tips__prev" href="#">
+                        <img src="/assets/Images/Right 24px.svg" alt="arrow">
+                    </a>
+                    <a class="container-tips__next" href="#">
+                        <img src="/assets/Images/Right 24px.svg" alt="arrow">
+                    </a>
+                </div>
+                <div class="container-tips__dots">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+        <!-- Beging #FuniroFurniture -->
+        <div class="row">
+            <div class="container__photo">
+                <div class="container-photo__title">
+                    <span>Share your setup with</span>
+                    <p>#FuniroFurniture</p>
+                </div>
+                <div class="container-photo__album">
+                    <table>
+                        <tr>
+                            <td><img src="/assets/Images/Rectangle 36.svg" alt="Rectangle"></td>
+                            <td><img src="/assets/Images/Rectangle 38.svg" alt="Rectangle"></td>
+                            <td rowspan="2"><img src="/assets/Images/Rectangle 40.svg" alt="Rectangle"></td> 
+                            <td><img src="/assets/Images/Rectangle 43.svg" alt="Rectangle"></td>
+                            <td><img src="/assets/Images/Rectangle 45.svg" alt="Rectangle"></td>
+                        </tr>
+                        <tr>
+                            <td id="td_img_37"><img src="/assets/Images/Rectangle 37.svg" alt="Rectangle"></td>
+                            <td id="td_img_39"><img src="/assets/Images/Rectangle 39.svg" alt="Rectangle"></td>
+                            <td id="td_img_41"><img src="/assets/Images/Rectangle 41.svg" alt="Rectangle"></td>
+                            <td id="td_img_44"><img src="/assets/Images/Rectangle 44.svg" alt="Rectangle"></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Beging Footer -->
+     <footer>
+        <div class="container">
+            <div class="row">
+                <ul class="footer__title">
+                    <p>Funiro.</p>
+                    <li class="footer__content">Worldwide furniture store since 2020. We sell over 1000+ branded products on our website</li>
+                    <li class="footer__content">
+                        <img src="/assets//Images/Pin 24px.svg" alt="ghim">
+                        <span>Sawojajar Malang, Indonesia</span>
+                    </li>
+                    <li class="footer__content">
+                        <img src="/assets//Images/Phone 24px.svg" alt="phone">
+                        <span>+6289 456 3455</span>
+                    </li>
+                    <li class="footer__content">www.funiro.com</li>
+                </ul>
+                <ul class="footer__title">
+                    <p>Menu</p>
+                    <li class="footer__content">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="footer__content">
+                        <a href="#">Rooms</a>
+                    </li>
+                    <li class="footer__content">
+                        <a href="#">Inspirations</a>
+                    </li>
+                    <li class="footer__content">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="footer__content">
+                        <a href="#">Terms & Policy</a>
+                    </li>
+                </ul>
+                <ul class="footer__title">
+                    <p>Account</p>
+                    <li class="footer__content">
+                        <a href="#">My Account</a>
+                    </li>
+                    <li class="footer__content">
+                        <a href="#">Checkout</a>
+                    </li>
+                    <li class="footer__content">
+                        <a href="#">My Cart</a>
+                    </li>
+                    <li class="footer__content">
+                        <a href="#">My catalog</a>
+                    </li>
+                </ul>
+                <ul class="footer__title">
+                    <p>Stay Connected</p>
+                    <li class="footer__content">
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li class="footer__content">
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li class="footer__content">
+                        <a href="#">Twitter</a>
+                    </li>
+                </ul>
+                <div class="footer__title">
+                    <p>Stay Updated</p>
+                    <form action="#" class="footer__content">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit">
+                            <img src="/assets/Images/carbon_send-alt-filled.svg" alt="send"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+    <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
